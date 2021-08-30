@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Records">
+
+    <EditText
+        android:id="@+id/editMan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="73dp"
+        android:hint="@string/manufacturer"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="#BF2626"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="73dp"
+        android:hint="@string/name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="#BF2626"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMan" />
+
+    <EditText
+        android:id="@+id/editPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="73dp"
+        android:hint="@string/price"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="#BF2626"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <EditText
+        android:id="@+id/editQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="73dp"
+        android:hint="@string/quantity"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="#BF2626"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPrice" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:background="@color/black"
+        android:text="Delete"
+        android:textColor="#DA1515"
+        app:layout_constraintBottom_toTopOf="@+id/searchButton"
+        app:layout_constraintStart_toStartOf="@+id/buttonAdd" />
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/black"
+        android:text="View"
+        android:textColor="#DA1515"
+        app:layout_constraintStart_toStartOf="@+id/buttonUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUpdate" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="262dp"
+        android:background="@color/black"
+        android:text="Update"
+        android:textColor="#DA1515"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/searchButton" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/black"
+        android:text="Add"
+        android:textColor="#DA1515"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDelete"
+        app:layout_constraintEnd_toStartOf="@+id/buttonUpdate" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:background="@color/black"
+        android:text="Search"
+        android:textColor="#DA1515"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
